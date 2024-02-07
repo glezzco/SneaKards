@@ -1,0 +1,30 @@
+a{
+    color:#FF914D
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+  h1 {
+    text-align: center;
+  }
+  .legal-section {
+    margin-bottom: 30px;
+  }
+  .legal-section h2 {
+    margin-bottom: 10px;
+  }
+  .legal-section p {
+    margin-bottom: 20px;
+  }
+
+  main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    align-items: center;
+    justify-content: center;
+
+  }

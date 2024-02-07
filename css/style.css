@@ -1,0 +1,158 @@
+:root{
+    --naranja:#FF914D;
+}
+body{
+    background-color: black;
+    color: white;
+}
+
+a{
+    color: black;
+}
+
+h1{
+    font-family: 'Bebas Neue', sans-serif;
+}
+p{
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+svg{
+    width: 1rem;
+    height: 1rem;
+}
+
+/*MENU*/
+.container_menu{
+    z-index: 13;
+   
+    backdrop-filter: blur(10px);
+    position:fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.abrir-menu, .cerrar-menu{
+    position:absolute;
+    right: 0;
+    border: none;
+    background: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.cerrar-menu{
+    margin-right: 1rem;
+    margin-top: -1.5rem;
+    color: rgb(0, 0, 0);
+    transition: all 0.5s ease-out;
+}
+.cerrar-menu:hover{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+
+}
+a{
+    font-size: 2rem;
+    font-family: 'Bebas Neue', sans-serif;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+a:hover{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+}
+
+.container_menu{
+    display: flex;
+}
+/*LOGO*/
+.logo{
+    margin: 1rem;
+    width: 3rem;
+    height: 2rem;
+    transition: all 0.5s;
+    -webkit-animation: all 2s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.logo:hover{
+    filter:brightness(500%);
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -webkit-filter:brightness(500%);
+}
+/*LOGO*/
+.abrir-menu{
+    margin-right: 1rem;
+    color:var(--naranja);
+    background: transparent;
+    display: block;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+.abrir-menu:hover{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+}
+.menu{
+    z-index: 14;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.links{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.options-menu{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+    align-items: end;
+    padding-left: 5rem;
+    background-color: var(--naranja);
+    text-align: right;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5) ;
+}
+.menu.visible{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/*MENU*/

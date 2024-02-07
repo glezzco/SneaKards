@@ -1,0 +1,76 @@
+:root{
+    --naranja:#FF914D;
+}
+.contact_main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    font-family: 'Bebas Neue', sans-serif;
+}
+@font-face {
+    font-family: 'integral';
+    src: url('../fonts/integral/Fontspring-DEMO-integralcf-heavy.otf') format('opentype');
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'tommy';
+    src: url('../fonts/tommy_fonts/Soft_Bold_Outline.otf') format('opentype');
+    font-weight: bold;
+    font-style: bold;
+}
+h2{
+    font-family: 'integral';
+    font-weight: bold;
+    font-style: bold;
+    color: #FF914D;
+}
+input{
+    color: white;
+    background-color: transparent;
+    border:solid 0.1rem #FF914D;
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+    height: 1.5rem;
+}
+.button{
+    font-family: 'Bebas Neue', sans-serif;
+    color: white;
+    border: none;
+    text-align: center;
+    border-radius: 30px;
+    padding: 0.2rem 4rem ;
+    background-color: red;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.button:hover{
+    transform: scale(1.2);
+    background-color: var(--naranja);
+    transition: ease all 0.5s;
+    -webkit-transition: ease all 0.5s;
+    -moz-transition: ease all 0.5s;
+    -ms-transition: ease all 0.5s;
+    -o-transition: ease all 0.5s;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+#mensaje{
+    color: white;
+    border:solid #FF914D 0.1rem;
+    background-color: transparent;
+    height: 10rem;
+    width: max-content;
+    resize: none;
+}
+
